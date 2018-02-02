@@ -1,0 +1,33 @@
+html{
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right,  #cce3e5, #02b7db,#637275);
+}
+.parent-div{
+	height: 300px;
+	width: 600px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: 100px auto;
+	text-align: center;
+	border: 1px solid lightgoldenrodyellow;
+	padding: 20px;
+	box-shadow: 1px 1px 2px 1px #d7d7d7;
+}
+.parent-div .tooltip-inner{
+  display: none;
+}
+.parent-div .child-slider-div{
+  display: inline-block;
+  width: 30px;
+  margin: 25px;
+}
+.parent-div .value-slider{
+	display: inline-block;
+	margin-top: 5px;
+}
+
+
