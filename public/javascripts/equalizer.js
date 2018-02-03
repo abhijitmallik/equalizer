@@ -70,85 +70,85 @@ export default class Equalizer extends Component{
    }
    render(){
    	 return(
-   	 	<div className="parent-div">
-   	 	    <div className="lable-div">
-   	 	     <div> -12 db </div>
-   	 	     <div> 0 </div>
-   	 	     <div> +12 db </div>
-   	 	    </div>
-            <div className="dropdown dropdown-post">
-                    <button className="dropbtn">Preset</button>
-                    <div className="dropdown-content">
-                      <div onClick={()=>{this.setSliderValue("Rock")}}>Rock</div>
-                      <div onClick={()=>{this.setSliderValue("Pop")}}>Pop</div>
-                      <div onClick={()=>{this.setSliderValue("Jazz")}}>Jazz</div>
-                      <div onClick={()=>{this.setSliderValue("Classical")}}>Classical</div>
-                    </div>
-            </div>        
-   	 	    <div className="slider-div">
-   	 	        <div className="child-slider-div"> 
-		            <ReactBootstrapSlider id="id1"
-					    value={this.state.value1}
-					    change={(e)=>{this.changeValue(e,"id1")}}
-					    slideStop={this.changeValue}
-					    max={this.state.max}
-					    min={this.state.min}
-					    orientation="vertical"
-					    reversed={true}
-					    disabled="enabled" />
-					<div className="value-slider">60k</div>    
-			    </div>
-			    <div className="child-slider-div"> 
-		            <ReactBootstrapSlider id="id2"
-					    value={this.state.value2}
-					    change={(e)=>{this.changeValue(e,"id2")}}
-					    slideStop={this.changeValue}
-					    max={this.state.max}
-					    min={this.state.min}
-					    orientation="vertical"
-					    reversed={true}
-					    disabled="enabled" />
-					<div className="value-slider">310k</div>    
+   	 	
+		<div className="parent-div">
+			<div className="lable-div">
+				<div> -12 db </div>
+				<div> 0 </div>
+				<div> +12 db </div>
+			</div>
+			<div className="dropdown dropdown-post">
+				<button className="dropbtn">Preset</button>
+				<div className="dropdown-content">
+					<div onClick={()=>{this.setSliderValue("Rock")}}>Rock</div>
+					<div onClick={()=>{this.setSliderValue("Pop")}}>Pop</div>
+					<div onClick={()=>{this.setSliderValue("Jazz")}}>Jazz</div>
+					<div onClick={()=>{this.setSliderValue("Classical")}}>Classical</div>
 				</div>
-			    <div className="child-slider-div"> 
-		            <ReactBootstrapSlider id="id3"
-					    value={this.state.value3}
-					    change={(e)=>{this.changeValue(e,"id3")}}
-					    slideStop={this.changeValue}
-					    max={this.state.max}
-					    min={this.state.min}
-					    orientation="vertical"
-					    reversed={true}
-					    disabled="enabled" />
-					<div className="value-slider">1k</div>    
+			</div>
+			<div className="slider-div">
+				<div className="child-slider-div">
+					<ReactBootstrapSlider id="id1"
+							    value={this.state.value1}
+							    change={(e)=>{this.changeValue(e,"id1")}}
+							    slideStop={this.changeValue}
+							    max={this.state.max}
+							    min={this.state.min}
+							    orientation="vertical"
+							    reversed={true}
+							    disabled="enabled" />
+					<div className="value-slider">60k</div>
 				</div>
-				<div className="child-slider-div"> 
-		            <ReactBootstrapSlider id="id4"
-					    value={this.state.value4}
-					    change={(e)=>{this.changeValue(e,"id4")}}
-					    slideStop={this.changeValue}
-					    max={this.state.max}
-					    min={this.state.min}
-					    orientation="vertical"
-					    reversed={true}
-					    disabled="enabled" />
-					<div className="value-slider">6k</div>    
+				<div className="child-slider-div">
+					<ReactBootstrapSlider id="id2"
+							    value={this.state.value2}
+							    change={(e)=>{this.changeValue(e,"id2")}}
+							    slideStop={this.changeValue}
+							    max={this.state.max}
+							    min={this.state.min}
+							    orientation="vertical"
+							    reversed={true}
+							    disabled="enabled" />
+					<div className="value-slider">310k</div>
 				</div>
-				<div className="child-slider-div"> 
-		            <ReactBootstrapSlider id="id5"
-					    value={this.state.value5}
-					    change={(e)=>{this.changeValue(e,"id5")}}
-					    slideStop={this.changeValue}
-					    max={this.state.max}
-					    min={this.state.min}
-					    orientation="vertical"
-					    reversed={true}
-					    disabled="enabled" />
-					<div className="value-slider">16k</div>    
+				<div className="child-slider-div">
+					<ReactBootstrapSlider id="id3"
+							    value={this.state.value3}
+							    change={(e)=>{this.changeValue(e,"id3")}}
+							    slideStop={this.changeValue}
+							    max={this.state.max}
+							    min={this.state.min}
+							    orientation="vertical"
+							    reversed={true}
+							    disabled="enabled" />
+					<div className="value-slider">1k</div>
 				</div>
-   	 	    </div>
-   	 	   
-   	 	</div>
+				<div className="child-slider-div">
+					<ReactBootstrapSlider id="id4"
+							    value={this.state.value4}
+							    change={(e)=>{this.changeValue(e,"id4")}}
+							    slideStop={this.changeValue}
+							    max={this.state.max}
+							    min={this.state.min}
+							    orientation="vertical"
+							    reversed={true}
+							    disabled="enabled" />
+					<div className="value-slider">6k</div>
+				</div>
+				<div className="child-slider-div">
+					<ReactBootstrapSlider id="id5"
+							    value={this.state.value5}
+							    change={(e)=>{this.changeValue(e,"id5")}}
+							    slideStop={this.changeValue}
+							    max={this.state.max}
+							    min={this.state.min}
+							    orientation="vertical"
+							    reversed={true}
+							    disabled="enabled" />
+					<div className="value-slider">16k</div>
+				</div>
+			</div>
+		</div>
    	 )
    }
 }
