@@ -5,6 +5,7 @@ html{
   background: linear-gradient(to bottom right,  #cce3e5, #02b7db,#637275);
 }
 .parent-div{
+	position: relative;
 	height: 300px;
 	width: 600px;
 	left: 0px;
@@ -28,6 +29,62 @@ html{
 .parent-div .value-slider{
 	display: inline-block;
 	margin-top: 5px;
+}
+.dropbtn {
+    /*background-color: #4CAF50;
+    color: white;*/
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    right:10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding:2px; 
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content div{
+	cursor: pointer;
+	height: 30px;
+}
+.dropdown-content div:hover{
+	border:1px solid;
+}
+.dropdown .dropbtn {
+    color: cornsilk;
+}
+.lable-div{
+	position: absolute;
+    bottom: 0px;
+    margin: 0px auto;
+    height: 300px;
+}
+.lable-div div{
+	height: 110px;
+}
+.red-color{
+	background-color: red;
+}
+.yellow-color{
+	background-color: yellow;
+}
+.green-color{
+	background-color: green;
 }
 
 
