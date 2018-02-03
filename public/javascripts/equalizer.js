@@ -69,7 +69,6 @@ export default class Equalizer extends Component{
 	    obj.classList.remove("yellow-color");
    }
    componentDidMount(){
-   	    debugger;
    	    let el = ReactDOM.findDOMNode(this);
     	el.querySelector('#id1').querySelector('.slider-track-high').classList.add("yellow-color");
 	    el.querySelector('#id2').querySelector('.slider-track-high').classList.add("yellow-color");

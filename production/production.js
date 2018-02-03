@@ -22692,7 +22692,6 @@ var Equalizer = function (_Component) {
 	}, {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			debugger;
 			var el = _reactDom2.default.findDOMNode(this);
 			el.querySelector('#id1').querySelector('.slider-track-high').classList.add("yellow-color");
 			el.querySelector('#id2').querySelector('.slider-track-high').classList.add("yellow-color");
