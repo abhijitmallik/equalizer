@@ -22690,6 +22690,17 @@ var Equalizer = function (_Component) {
 			obj.classList.remove("yellow-color");
 		}
 	}, {
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			debugger;
+			var el = _reactDom2.default.findDOMNode(this);
+			el.querySelector('#id1').querySelector('.slider-track-high').classList.add("yellow-color");
+			el.querySelector('#id2').querySelector('.slider-track-high').classList.add("yellow-color");
+			el.querySelector('#id3').querySelector('.slider-track-high').classList.add("yellow-color");
+			el.querySelector('#id4').querySelector('.slider-track-high').classList.add("yellow-color");
+			el.querySelector('#id5').querySelector('.slider-track-high').classList.add("yellow-color");
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			var _this2 = this;
